@@ -34,18 +34,19 @@ public class MainHashtable {
 			System.out.println(" - " + tabelaPessoas.get(chave).toString());
 		}
 //		Pessoa p = null;
-//		if (tabelaPessoas.contains("legal")) {
-//			p = tabelaPessoas.get("legal");			
+//		if (tabelaPessoas.containsKey("legal")) {
+//			p = tabelaPessoas.get("legal");
 //		} else {
 //			p = new Pessoa(-1, "Não existe");
 //		}
 //		System.out.println(p);
 		Pessoa p = tabelaPessoas.getOrDefault("legal", new Pessoa(-1, "Não existe"));
 		System.out.println(p);
-//		if (tabelaPessoas.contains("legal")) {
-//			tabelaPessoas.put("legal", new Pessoa(1, "Pessoa 1"));
-//	    } 
-		tabelaPessoas.putIfAbsent("legal", new Pessoa(1, "Pessoa 1"));
+		
+//		if (!tabelaPessoas.containsKey("legal")) {
+//			tabelaPessoas.put("legal", new Pessoa(1, "TreinaWeb"));
+//		}
+		tabelaPessoas.putIfAbsent("legal", new Pessoa(1, "TreinaWeb 1"));
 		System.out.println(tabelaPessoas);
 		
 		tabelaPessoas.forEach((chave, valor) -> {
