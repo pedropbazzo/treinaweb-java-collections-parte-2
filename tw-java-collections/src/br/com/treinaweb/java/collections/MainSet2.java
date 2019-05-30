@@ -1,6 +1,7 @@
 package br.com.treinaweb.java.collections;
 
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
