@@ -7,7 +7,7 @@ import br.com.treinaweb.java.collections.models.Pessoa;
 public class MainHashtable {
 
 	public static void main(String[] args) {
-		Hashtable<String, Pessoa> tabelaPessoas = new Hashtable<String, Pessoa>();
+		Hashtable<String, Pessoa> tabelaPessoas = new Hashtable<String, Pessoa>(20, 0.6f);
 		tabelaPessoas.put("legal", new Pessoa(1, "TreinaWeb 1"));
 		System.out.println(tabelaPessoas);
 		tabelaPessoas.put("chato", new Pessoa(2, "TreinaWeb 2"));
