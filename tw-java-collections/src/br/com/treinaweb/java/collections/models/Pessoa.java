@@ -75,3 +75,10 @@ public class Pessoa implements Comparable<Pessoa> {
 	}
 
 }
+
+
+//collections part II
+
+
+
+read
